@@ -1,8 +1,8 @@
 package game;
 
-import items.Item;
+//import items.Item;
 import rooms.*;
-import people.Person;
+//import people.Person;
 
 import java.util.Scanner;
 
@@ -17,15 +17,18 @@ public class GameRunner {
             for (int i = 0; i<row.length;i++)
             {
                 boolean[] doors = {true,true,true,true};
-                Person[] people = {};
-                Item[] items = {};
+  //              Person[] people = {};
+    //            Item[] items = {};
 
-                row[i] = new Hallway(doors, people, items, i, j);
+                //row[i] = new Hallway(doors, people, items, i, j);
             }
 
+        System.out.print(map);
         }
+    }
+}
 
-        School tech = new School(map);
+        /*School tech = new School(map);
 
 
         boolean gameOn = true;
@@ -54,6 +57,6 @@ public class GameRunner {
     }
 
 }
-
+*/
 
 
