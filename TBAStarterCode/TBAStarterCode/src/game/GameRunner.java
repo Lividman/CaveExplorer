@@ -1,32 +1,40 @@
 package game;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 //import items.Item;
 import rooms.*;
 //import people.Person;
 
 import java.util.Scanner;
-
-public class GameRunner {
+public class GameRunner 
+{
+	
 
     public static void main (String[] args)
     {
-        Room[][] map = new Room[5][5];
-        for (int j = 0; j<map.length; j++)
-        {
-        	Room[] row = map[j];
-            for (int i = 0; i<row.length;i++)
-            {
-                boolean[] doors = {true,true,true,true};
+    	List<Item> items = Item.generate(4);
+    	System.out.print(items);
+    }
+}
+        //Room[][] map = new Room[5][5];
+       // for (int j = 0; j<map.length; j++)
+        //{
+        //	Room[] row = map[j];
+         //   for (int i = 0; i<row.length;i++)
+    //        {
+  //              boolean[] doors = {true,true,true,true};
   //              Person[] people = {};
     //            Item[] items = {};
 
                 //row[i] = new Hallway(doors, people, items, i, j);
-            }
+      //      }
 
-        System.out.print(map);
-        }
-    }
-}
+        //System.out.print(map);
+        //}
+    //}
+//}
 
         /*School tech = new School(map);
 
