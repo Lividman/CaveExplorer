@@ -5,7 +5,7 @@ import items.Item;
 
 import java.util.Arrays;
 
-public abstract class Room {
+public abstract class Room extends game.Item {
 
     private boolean[] doors;
     private Person[] occupants;

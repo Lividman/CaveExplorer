@@ -21,24 +21,31 @@ public class Item
 		this.durabality = durabality;
 		this.type = type;
 		this.damage = damage;
+		this.name = this.mattype + " " + this.type;
 	}
 	
-	public static List<Item> generate(int num)
+	public static List<Item> generatechest(int num)
 	{
 		List<Item> myList = new ArrayList<Item>();
 		int i = 0;
 		while(i < num)
 		{
-		 int rnd2 = new Random().nextInt(1);
+		 int rnd2 = new Random().nextInt(2);
 		 int rnd = new Random().nextInt(num);
 		 Item thing = new Item(mattypes[rnd], durabalities[rnd], types[rnd2], damages[rnd]);
 		 if(thing.type == "pickaxe")
 		 {
 			 thing.damage = 0;
+			 thing.name = thing.mattype + " " + thing.type;
 		 }
+		 thing.name = thing.mattype + " " + thing.type;
 		 myList.add(thing);
 		 i++;
 		}
 		 return myList;
 	}
-}
+	public void printname()
+	{
+		System.out.println(this.name);
+	}
+	}

@@ -14,8 +14,12 @@ public class GameRunner
 
     public static void main (String[] args)
     {
-    	List<Item> items = Item.generate(4);
-    	System.out.print(items);
+    	List<Item> items = Item.generatechest(6);
+    	for(Item i: items )
+    	{
+    		i.printname();
+    	}
+    	
     }
 }
         //Room[][] map = new Room[5][5];
