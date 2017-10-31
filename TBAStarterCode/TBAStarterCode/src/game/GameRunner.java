@@ -25,7 +25,7 @@ public class GameRunner
         //Room[][] map = new Room[5][5];
        // for (int j = 0; j<map.length; j++)
         //{
-        //	Room[] row = map[j];
+        //weee	Room[] row = map[j];
          //   for (int i = 0; i<row.length;i++)
     //        {
   //              boolean[] doors = {true,true,true,true};

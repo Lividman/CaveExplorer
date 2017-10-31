@@ -14,3 +14,4 @@ public class Mineral
 	private static int[] strength = {10, 25, 30, 50, 100, 250, 300, 499};
 	public Mineral(String material) 
 }
+//wee
