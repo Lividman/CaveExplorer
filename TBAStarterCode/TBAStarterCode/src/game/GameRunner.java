@@ -9,6 +9,7 @@ import rooms.*;
 
 import java.util.Scanner;
 public class GameRunner 
+
 {
 	
 
@@ -18,6 +19,12 @@ public class GameRunner
     	for(Item i: items )
     	{
     		i.printname();
+    	}
+    	
+    	List<Mineral> mlist = Mineral.generatemineral(4);
+    	for(Mineral i: mlist)
+    	{
+    		i.printnombre();
     	}
     	
     }
