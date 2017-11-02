@@ -1,8 +1,15 @@
 package rooms;
+import java.util.Arrays;
 
-import people.Person;
-import items.Item;
+//import people.Person;
+import game.Item;
 
+public abstract class Room extends game.Item extends game.Mineral;
+{
+	
+}	
+
+/*
 import java.util.Arrays;
 
 public abstract class Room extends game.Item {
@@ -57,3 +64,4 @@ public abstract class Room extends game.Item {
     public abstract void print();
 
 }
+*/

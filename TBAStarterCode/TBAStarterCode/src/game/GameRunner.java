@@ -15,13 +15,13 @@ public class GameRunner
 
     public static void main (String[] args)
     {
-    	List<Item> items = Item.generatechest(6);
-    	for(Item i: items )
-    	{
-    		i.printname();
-    	}
+    	//List<Item> items = Item.generatechest(6);
+    	//for(Item i: items )
+    	//{
+    	//	i.printname();
+    	//}
     	
-    	List<Mineral> mlist = Mineral.generatemineral(4);
+    	List<Mineral> mlist = Mineral.generatemineral(6);
     	for(Mineral i: mlist)
     	{
     		i.printnombre();
@@ -48,7 +48,15 @@ public class GameRunner
 //}
 
         /*School tech = new School(map);
-
+/*Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Unknown Source)
+	at java.util.Arrays.copyOf(Unknown Source)
+	at java.util.ArrayList.grow(Unknown Source)
+	at java.util.ArrayList.ensureExplicitCapacity(Unknown Source)
+	at java.util.ArrayList.ensureCapacityInternal(Unknown Source)
+	at java.util.ArrayList.add(Unknown Source)
+	at game.Mineral.generatemineral(Mineral.java:31)
+	at game.GameRunner.main(GameRunner.java:24)
 
         boolean gameOn = true;
         Person player1 = Utilities.createPerson();

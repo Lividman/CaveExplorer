@@ -17,6 +17,7 @@ public class Mineral
 	private static int strength;
 	public Mineral(String material, int strength) 
 	{
+		this.strength = strength;
 		this.material = material;
 	}
 	public static List<Mineral> generatemineral(int num)
@@ -28,6 +29,7 @@ public class Mineral
 		 int rnd = new Random().nextInt(7);
 		 Mineral mineral = new Mineral(materialtype[rnd], strengthlist[rnd]);
 		 myList.add(mineral);
+		 i++;
 		}
 		return myList;
 	}
